@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BiteForce</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <a href="zepto.css">Zeptoo</a>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white p-4 shadow flex justify-between items-center">
+    <h1 class="text-xl font-bold text-pink-600">Zepto</h1>
+    <button class="text-sm text-blue-500">Change Location</button>
+  </header>
+
+  <!-- Search Bar -->
+  <div class="p-4 bg-white">
+    <input
+      type="text"
+      placeholder="Search for groceries, fruits, etc..."
+      class="w-full p-3 rounded-lg border border-gray-300"
+    />
+  </div>
+
+  <!-- Categories -->
+  <section class="px-4 py-2 bg-white">
+    <h2 class="text-lg font-semibold mb-2">Categories</h2>
+    <div class="flex gap-3 overflow-x-auto">
+      <div class="min-w-[80px] p-2 bg-pink-100 rounded text-center text-sm">Fruits</div>
+      <div class="min-w-[80px] p-2 bg-yellow-100 rounded text-center text-sm">Veggies</div>
+      <div class="min-w-[80px] p-2 bg-green-100 rounded text-center text-sm">Snacks</div>
+      <div class="min-w-[80px] p-2 bg-blue-100 rounded text-center text-sm">Beverages</div>
+    </div>
+  </section>
+
+  <!-- Product List -->
+  <main class="p-4">
+    <h2 class="text-lg font-semibold mb-3">Popular Items</h2>
+    
+      <!-- Product Card -->
+     
+
+      <div class="bg-white p-3 rounded shadow">
+        <img src="fruits.jpg" width="14px" height="10px" alt="Fruits" class="w-full rounded mb-2" />
+        <br>
+        <h3 class="text-sm font-medium">Orange-18<img src="orange.jpg"></h3>
+        <p class="text-gray-500 text-xs">32 rs</p>
+        <label for="quantity-orange" class="block text-sm text-gray-600 mb-1">Select Quantity</label>
+             <select id="quantity-orange" class="w-full p-2 mb-2 border border-gray-300 rounded">
+                <option value="1">1 pc</option>
+                <option value="2">2 pcs</option>
+                <option value="5">5 pcs</option>
+                 <option value="10">10 pcs</option>
+             </select>
+
+        <br>
+        <h3 class="text-sm font-medium">Apples-15<img src="apple.jpg"></h3>
+        <p class = "text-sm font-medium">35 rs</p>
+        <label for="quantity-apples" class="block text-sm text-gray-600 mb-1">Select Quantity</label>
+             <select id="quantity-apples" class="w-full p-2 mb-2 border border-gray-300 rounded">
+                <option value="1">1 pc</option>
+                <option value="2">2 pcs</option>
+                <option value="5">5 pcs</option>
+                 <option value="10">10 pcs</option>
+             </select>
+        <br>
+
+        <h3 class="text-sm font-medium">Mango-10<img src="mango.jpg"></h3>
+        <p class="text-sm font-medium">50 rs</p>
+        <label for="quantity-mango" class="block text-sm text-gray-600 mb-1">Select Quantity</label>
+             <select id="quantity-mango" class="w-full p-2 mb-2 border border-gray-300 rounded">
+                <option value="1">1 pc</option>
+                <option value="2">2 pcs</option>
+                <option value="5">5 pcs</option>
+                 <option value="10">10 pcs</option>
+             </select>
+        <br>
+
+        <h3 class="text-sm font-medium">Grapes-12<img src="grapes.jpg"></h3>
+        <p class="text-sm font-medium">40 rs</p>
+        <label for="quantity-grapes" class="block text-sm text-gray-600 mb-1">Select Quantity</label>
+             <select id="quantity-grapes" class="w-full p-2 mb-2 border border-gray-300 rounded">
+                <option value="1">1 pc</option>
+                <option value="2">2 pcs</option>
+                <option value="5">5 pcs</option>
+                 <option value="10">10 pcs</option>
+             </select>
+        <br>
+
+        <h3 class="text-sm font-medium">papaya-8<img src="papaya.jpg"></h3>
+        <p class="text-sm font-medium">28 rs</p>
+        <label for="quantity-papaya" class="block text-sm text-gray-600 mb-1">Select Quantity</label>
+             <select id="quantity-papaya" class="w-full p-2 mb-2 border border-gray-300 rounded">
+                <option value="1">1 pc</option>
+                <option value="2">2 pcs</option>
+                <option value="5">5 pcs</option>
+                 <option value="10">10 pcs</option>
+             </select>
+        <br>
+
+        <h3 class="text-sm font-medium">Watermelon-7<img src="watermelon.jpg"></h3>
+        <p class="text-sm font-medium">35 rs</p>
+        <label for="quantity-watermelon" class="block text-sm text-gray-600 mb-1">Select Quantity</label>
+             <select id="quantity-watermelon" class="w-full p-2 mb-2 border border-gray-300 rounded">
+                <option value="1">1 pc</option>
+                <option value="2">2 pcs</option>
+                <option value="5">5 pcs</option>
+                 <option value="10">10 pcs</option>
+             </select>
+        <br>
+
+         <h3 class="text-sm font-medium">Banana-20<img src="banana.jpg"></h3>
+         <p class="text-sm font-medium">10 rs</p>
+         <label for="quantity-banana" class="block text-sm text-gray-600 mb-1">Select Quantity</label>
+             <select id="quantity-banana" class="w-full p-2 mb-2 border border-gray-300 rounded">
+                <option value="1">1 pc</option>
+                <option value="2">2 pcs</option>
+                <option value="5">5 pcs</option>
+                 <option value="10">10 pcs</option>
+             </select>
+         <br>
+      </div>
+       <div class="bg-white p-3 rounded shadow">
+      
+       
+        <button class="mt-2 w-full bg-pink-500 text-white text-sm py-1 rounded">Add</button>
+      </div>
+
+        
+      <div class="bg-white p-3 rounded shadow">
+
+        <img src="vegetables.jpg" alt="Vegetables" class="w-full rounded mb-2" />
+        <br>
+        <h3 class="text-sm font-medium">Tomato-15<img src="tomato.jpg"></h3>
+        <p class="text-gray-500 text-xs">15 rs</p>
+        <label for="quantity-tomato" class="block text-sm text-gray-600 mb-1">Select Quantity</label>
+             <select id="quantity-tomato" class="w-full p-2 mb-2 border border-gray-300 rounded">
+                <option value="1">1 pc</option>
+                <option value="2">2 pcs</option>
+                <option value="5">5 pcs</option>
+                 <option value="10">10 pcs</option>
+             </select>
+        <br>
+
+        <h3 class="text-sm font-medium">Potato-18<img src="potato.jpg"></h3>
+        <p class="text-gray-500 text-xs">12 rs</p>
+        <label for="quantity-potato" class="block text-sm text-gray-600 mb-1">Select Quantity</label>
+             <select id="quantity-potato" class="w-full p-2 mb-2 border border-gray-300 rounded">
+                <option value="1">1 pc</option>
+                <option value="2">2 pcs</option>
+                <option value="5">5 pcs</option>
+                 <option value="10">10 pcs</option>
+             </select>
+        <br>
+
+        <h3 class="text-sm font-medium">Onion-17<img src="onion.jpg"></h3>
+        <p class="text-gray-500 text-xs">18 rs</p>
+        <label for="quantity-onion" class="block text-sm text-gray-600 mb-1">Select Quantity</label>
+             <select id="quantity-onion" class="w-full p-2 mb-2 border border-gray-300 rounded">
+                <option value="1">1 pc</option>
+                <option value="2">2 pcs</option>
+                <option value="5">5 pcs</option>
+                 <option value="10">10 pcs</option>
+             </select>
+        <br>
+
+        <h3 class="text-sm font-medium">Carrot-20<img src="carrots.jpg"></h3>
+        <p class="text-gray-500 text-xs">18 rs</p>
+        <label for="quantity-carrot" class="block text-sm text-gray-600 mb-1">Select Quantity</label>
+             <select id="quantity-carrot" class="w-full p-2 mb-2 border border-gray-300 rounded">
+                <option value="1">1 pc</option>
+                <option value="2">2 pcs</option>
+                <option value="5">5 pcs</option>
+                 <option value="10">10 pcs</option>
+             </select>
+        <br>
+
+        <h3 class="text-sm font-medium">Cucumber-16<img src="cucumber.jpg"></h3>
+        <p class="text-gray-500 text-xs">16 rs</p>
+        <label for="quantity-cucumber" class="block text-sm text-gray-600 mb-1">Select Quantity</label>
+             <select id="quantity-cucumber" class="w-full p-2 mb-2 border border-gray-300 rounded">
+                <option value="1">1 pc</option>
+                <option value="2">2 pcs</option>
+                <option value="5">5 pcs</option>
+                 <option value="10">10 pcs</option>
+             </select>
+        <br>
+
+        <h3 class="text-sm font-medium">spinach-8<img src="spinach.jpg"></h3>
+        <p class="text-gray-500 text-xs">20 rs</p>
+        <label for="quantity-spinach" class="block text-sm text-gray-600 mb-1">Select Quantity</label>
+             <select id="quantity-spinach" class="w-full p-2 mb-2 border border-gray-300 rounded">
+                <option value="1">1 pc</option>
+                <option value="2">2 pcs</option>
+                <option value="5">5 pcs</option>
+                 <option value="10">10 pcs</option>
+             </select>
+        <br>
+
+        <h3 class="text-sm font-medium">Cauliflower-9<img src="cauliflower.jpg"></h3>
+        <p class="text-gray-500 text-xs">30 rs</p>
+        <label for="quantity-cauliflower" class="block text-sm text-gray-600 mb-1">Select Quantity</label>
+             <select id="quantity-cauliflower" class="w-full p-2 mb-2 border border-gray-300 rounded">
+                <option value="1">1 pc</option>
+                <option value="2">2 pcs</option>
+                <option value="5">5 pcs</option>
+                 <option value="10">10 pcs</option>
+             </select>
+        <br>
+      </div>
+       <div class="bg-white p-3 rounded shadow">
+       
+        <button class="mt-2 w-full bg-pink-500 text-white text-sm py-1 rounded">Add</button>
+      </div>
+
+
+
+       <div class="bg-white p-3 rounded shadow">
+
+        <img src="snacks.jpg" alt="Snacks" class="w-full rounded mb-2" />
+        <br>
+        <h3 class="text-sm font-medium">Chips-14<img src="chips.jpg"></h3>
+        <p class="text-gray-500 text-xs">20 rs</p>
+        <label for="quantity-chips" class="block text-sm text-gray-600 mb-1">Select Quantity</label>
+             <select id="quantity-chips" class="w-full p-2 mb-2 border border-gray-300 rounded">
+                <option value="1">1 pc</option>
+                <option value="2">2 pcs</option>
+                <option value="5">5 pcs</option>
+                 <option value="10">10 pcs</option>
+             </select>
+        <br>
+
+        <h3 class="text-sm font-medium">Biscuits-10<img src="biscuits.jpg"></h3>
+        <p class="text-gray-500 text-xs">22 rs</p>
+        <label for="quantity-biscuits" class="block text-sm text-gray-600 mb-1">Select Quantity</label>
+             <select id="quantity-biscuits" class="w-full p-2 mb-2 border border-gray-300 rounded">
+                <option value="1">1 pc</option>
+                <option value="2">2 pcs</option>
+                <option value="5">5 pcs</option>
+                 <option value="10">10 pcs</option>
+             </select>
+        <br>
+
+        <h3 class="text-sm font-medium">Chocolate bar-8<img src="chocolate bar.jpg"></h3>
+        <p class="text-gray-500 text-xs">25 rs</p>
+        <label for="quantity-chocolate bar" class="block text-sm text-gray-600 mb-1">Select Quantity</label>
+             <select id="quantity-chocolate bar" class="w-full p-2 mb-2 border border-gray-300 rounded">
+                <option value="1">1 pc</option>
+                <option value="2">2 pcs</option>
+                <option value="5">5 pcs</option>
+                 <option value="10">10 pcs</option>
+             </select>
+        <br>
+
+        <h3 class="text-sm font-medium">Cookies-12<img src="cookies.jpg"></h3>
+        <p class="text-gray-500 text-xs">28 rs</p>
+        <label for="quantity-cookies" class="block text-sm text-gray-600 mb-1">Select Quantity</label>
+             <select id="quantity-cookies" class="w-full p-2 mb-2 border border-gray-300 rounded">
+                <option value="1">1 pc</option>
+                <option value="2">2 pcs</option>
+                <option value="5">5 pcs</option>
+                 <option value="10">10 pcs</option>
+             </select>
+        <br>
+
+        <h3 class="text-sm font-medium">Namkeen Mix-15<img src="namkeen mix.jpg"></h3>
+        <p class="text-gray-500 text-xs">30 rs</p>
+        <label for="quantity-namkeen mix" class="block text-sm text-gray-600 mb-1">Select Quantity</label>
+             <select id="quantity-namkeen mix" class="w-full p-2 mb-2 border border-gray-300 rounded">
+                <option value="1">1 pc</option>
+                <option value="2">2 pcs</option>
+                <option value="5">5 pcs</option>
+                 <option value="10">10 pcs</option>
+             </select>
+        <br>
+
+        <h3 class="text-sm font-medium">Samosa(2pcs)-14<img src="samosa.jpg"></h3>
+        <p class="text-gray-500 text-xs">24 rs</p>
+        <label for="quantity-samosa" class="block text-sm text-gray-600 mb-1">Select Quantity</label>
+             <select id="quantity-samosa" class="w-full p-2 mb-2 border border-gray-300 rounded">
+                <option value="1">1 pc</option>
+                <option value="2">2 pcs</option>
+                <option value="5">5 pcs</option>
+                 <option value="10">10 pcs</option>
+             </select>
+        <br>
+        <h3 class="text-sm font-medium">Muffin-10<img src="muffin.jpg"></h3>
+        <p class="text-gray-500 text-xs">18 rs</p>
+        <label for="quantity-muffin" class="block text-sm text-gray-600 mb-1">Select Quantity</label>
+             <select id="quantity-muffin" class="w-full p-2 mb-2 border border-gray-300 rounded">
+                <option value="1">1 pc</option>
+                <option value="2">2 pcs</option>
+                <option value="5">5 pcs</option>
+                 <option value="10">10 pcs</option>
+             </select>
+        <br>
+      </div>
+      <div class="bg-white p-3 rounded shadow">
+        
+       
+        <button class="mt-2 w-full bg-pink-500 text-white text-sm py-1 rounded">Add</button>
+      </div>
+
+
+
+       <div class="bg-white p-3 rounded shadow">
+
+        <img src="beverages.jpg" alt="Beverages" class="w-full rounded mb-2" />
+        <br>
+        <h3 class="text-sm font-medium">Cold Drink(500ml)-12<img src="cold drink.jpg"></h3>
+        <p class="text-gray-500 text-xs">35 rs</p>
+        <label for="quantity-cold drink" class="block text-sm text-gray-600 mb-1">Select Quantity</label>
+             <select id="quantity-cold drink" class="w-full p-2 mb-2 border border-gray-300 rounded">
+                <option value="1">1 pc</option>
+                <option value="2">2 pcs</option>
+                <option value="5">5 pcs</option>
+                 <option value="10">10 pcs</option>
+             </select>
+        <br>
+
+        <h3 class="text-sm font-medium">Juice Tetrapack-18<img src="juice tetrapack.jpg"></h3>
+        <p class="text-gray-500 text-xs">20 rs</p>
+        <label for="quantity-juice tetrapack" class="block text-sm text-gray-600 mb-1">Select Quantity</label>
+             <select id="quantity-juice tetrapack" class="w-full p-2 mb-2 border border-gray-300 rounded">
+                <option value="1">1 pc</option>
+                <option value="2">2 pcs</option>
+                <option value="5">5 pcs</option>
+                 <option value="10">10 pcs</option>
+             </select>
+        <br>
+
+        <h3 class="text-sm font-medium">Lassi-10<img src="lassi.jpg"></h3>
+        <p class="text-gray-500 text-xs">22 rs</p>
+        <label for="quantity-lassi" class="block text-sm text-gray-600 mb-1">Select Quantity</label>
+             <select id="quantity-lassi" class="w-full p-2 mb-2 border border-gray-300 rounded">
+                <option value="1">1 pc</option>
+                <option value="2">2 pcs</option>
+                <option value="5">5 pcs</option>
+                 <option value="10">10 pcs</option>
+             </select>
+        <br>
+
+        <h3 class="text-sm font-medium">ButterMilk-9<img src="buttermilk.jpg"></h3>
+        <p class="text-gray-500 text-xs">20 rs</p>
+        <label for="quantity-buttermilk" class="block text-sm text-gray-600 mb-1">Select Quantity</label>
+             <select id="quantity-buttermilk" class="w-full p-2 mb-2 border border-gray-300 rounded">
+                <option value="1">1 pc</option>
+                <option value="2">2 pcs</option>
+                <option value="5">5 pcs</option>
+                 <option value="10">10 pcs</option>
+             </select>
+        <br>
+
+      </div>
+      <div class="bg-white p-3 rounded shadow">
+        
+       
+        <button class="mt-2 w-full bg-pink-500 text-white text-sm py-1 rounded">Add</button>
+      </div>
+
+      
+    
+
+
+
+
+
+        
+
+
+
+
+        <button class="mt-2 w-full bg-pink-500 text-white text-sm py-1 rounded">Add</button>
+      </div>
+
+      <!-- Add more products as needed -->
+    </div>
+  </main>
+
+  <!-- Bottom Navigation -->
+  <nav class="fixed bottom-0 w-full bg-white shadow p-2 flex justify-around items-center">
+    <button class="flex flex-col items-center text-sm text-pink-600">
+      <svg class="w-5 h-5 mb-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M13 5v6h6"></path>
+      </svg>
+      Home
+    </button>
+    <button class="flex flex-col items-center text-sm text-gray-500">
+      <svg class="w-5 h-5 mb-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+      </svg>
+      Orders
+    </button>
+    <button class="flex flex-col items-center text-sm text-gray-500">
+      <svg class="w-5 h-5 mb-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 20h9"></path>
+      </svg>
+      Cart
+    </button>
+    <button class="flex flex-col items-center text-sm text-gray-500">
+      <svg class="w-5 h-5 mb-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5.121 17.804A13.937 13.937 0 0112 15c2.675 0 5.142.834 7.121 2.236"></path>
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10a3 3 0 11-6 0 3 3 0 016 0z"></path>
+      </svg>
+      Account
+    </button>
+  </nav>
+
+</body>
+</html>
